@@ -34,17 +34,42 @@ best.area <- net.profit == max(net.profit)
 
 worst.area <- net.profit == min(net.profit)
 
+#Convert some calculations to units of one million dollars:
+total.revenue.1m <- round(total.revenue / 1000000, 0)
+total.production.cost.1m <- round(total.production.cost / 1000000, 0)
+gp.1m <- round(gp / 1000000, 0)
+tax.1m <- round(tax / 1000000, 0)
+net.profit.1m <- round(net.profit / 1000000, 0)
+mean.net.profit.1m <- round(mean.net.profit / 1000000, 0)
+
 #Print Results
 worst.area
 best.area
 good.areas
 bad.areas
-mean.net.profit
+mean.net.profit.1m
 profit.margin
-net.profit
-tax
-gp
-total.production.cost
-total.revenue
+net.profit.1m
+tax.1m
+gp.1m
+total.production.cost.1m
+total.revenue.1m
 total.production
 yeild.ton
+
+M <- rbind(
+  area,
+  yeild.ton,
+  mean.net.profit.1m,
+  net.profit.1m,
+  worst.area,
+  best.area,
+  good.areas,
+  bad.areas,
+  profit.margin,
+  tax.1m,
+  gp.1m,
+  total.production.cost.1m,
+  total.revenue.1m,
+  total.production
+)
