@@ -3,7 +3,7 @@ yeild.kg <- c(732.1, 5780.8, 7431.8, 2258.1, 3691.7, 3269.4) #kg/ha
 area.harvested <- c(10873, 23629200, 2897800, 6200000, 1867560, 15083610) #ha
 yeild.ton <- yeild.kg / 1000 #ton/ha
 
-total.production <- yeild.ton * area.harvested
+total.production <- round(yeild.ton * area.harvested, 0)
 
 #If the wheat price per ton is $250, the total revenue is:
 total.revenue <- total.production * 250
@@ -57,19 +57,19 @@ total.revenue.1m
 total.production
 yeild.ton
 
-M <- rbind(
-  area,
-  yeild.ton,
-  mean.net.profit.1m,
-  net.profit.1m,
-  worst.area,
-  best.area,
-  good.areas,
-  bad.areas,
-  profit.margin,
-  tax.1m,
-  gp.1m,
-  total.production.cost.1m,
-  total.revenue.1m,
-  total.production
+DataFrame <- data.frame(
+  Area = area,
+  Yeild_ton_per_ha = yeild.ton,
+  Mean_of_net_profit = mean.net.profit.1m,
+  Net_profit_million = net.profit.1m,
+  The_worst_area = worst.area,
+  The_best_area = best.area,
+  Good_areas = good.areas,
+  Bad_areas = bad.areas,
+  Profit_margin_percent = profit.margin,
+  Tax_million = tax.1m,
+  Gp_million = gp.1m,
+  Total_production_cost_million = total.production.cost.1m,
+  Total_revenue_million = total.revenue.1m,
+  Total_production_ton = total.production
 )
