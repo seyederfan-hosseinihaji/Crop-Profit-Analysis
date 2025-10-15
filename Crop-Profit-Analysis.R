@@ -1,3 +1,9 @@
+#Run these three lines to view the FAOSTAT.xls file:
+library(readxl)
+FAOSTAT <- read_excel("FAOSTAT.xls")
+View(FAOSTAT)
+####################################
+
 area <- c("Burundi", "China", "Germany", "Iran", "Italy", "USA")
 yield.kg <- c(732.1, 5780.8, 7431.8, 2258.1, 3691.7, 3269.4) #kg/ha
 area.harvested <- c(10873, 23629200, 2897800, 6200000, 1867560, 15083610) #ha
@@ -40,7 +46,7 @@ net.profit.1m <- round(net.profit / 1000000, 0)
 mean.net.profit.1m <- round(mean.net.profit / 1000000, 0)
 total.production.round <- round(total.production, 0)
   
-#Print Results
+#Print Results:
 worst.area
 best.area
 good.areas
@@ -74,3 +80,8 @@ DataFrame <- data.frame(
 )
 
 View(DataFrame)
+
+write.csv(DataFrame, file = "Final_summary.csv", row.names = FALSE)
+
+#shows the .csv file location
+cat("File exported successfully to:", getwd(), "/Final_summary.csv\n")

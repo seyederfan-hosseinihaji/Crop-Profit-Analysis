@@ -1,0 +1,7 @@
+"Area","yield_ton_per_ha","Mean_of_net_profit","Net_profit_million","The_worst_area","The_best_area","Good_areas","Bad_areas","Profit_margin_percent","Tax_million","Gp_million","Total_production_cost_million","Total_revenue_million","Total_production_ton"
+"Burundi",0.7321,3425,1,TRUE,FALSE,FALSE,TRUE,36,0,1,1,2,7960
+"China",5.7808,3425,12294,FALSE,TRUE,TRUE,FALSE,36,1366,13660,20489,34149,136595679
+"Germany",7.4318,3425,1938,FALSE,FALSE,FALSE,TRUE,36,215,2154,3230,5384,21535870
+"Iran",2.2581,3425,1260,FALSE,FALSE,FALSE,TRUE,36,140,1400,2100,3500,14000220
+"Italy",3.6917,3425,621,FALSE,FALSE,FALSE,TRUE,36,69,689,1034,1724,6894471
+"USA",3.2694,3425,4438,FALSE,FALSE,TRUE,FALSE,36,493,4931,7397,12329,49314355
