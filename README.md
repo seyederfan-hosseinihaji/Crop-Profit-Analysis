@@ -33,6 +33,8 @@ Clone the repository:
 
 Crop-Profit-Analysis.R
 
+Crop-Profit-Analysis.Rproj
+
 FAOSTAT.xls
 
 Final_summary.csv
